@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    
+}
+p{
+    font-size: 13px;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+main{
+    width: 90%;
+margin: auto;   
+}
+
+.work{ 
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+/* image */
+#desktop-image{
+    display: none;
+}
+.perfume{
+    padding-top: 20px;
+}
+
+#mobile-image{
+    width: 100%;
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+    margin: auto;
+}
+
+/* below image */
+.container{
+    background-color: hsl(0, 0%, 100%);
+    margin-top: -1%;
+    
+}
+
+
+
+/* body wrting before cost */
+.write{
+    width: 85%;
+    margin: auto;
+    padding: auto;
+}
+ 
+.write h2{
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+}
+.write p{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5rem;
+    width: 99%;
+}
+
+/* cost */
+.price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    justify-content: space-between;
+    margin-left: 8%;
+}
+
+.price h2{
+color: hsl(158, 36%, 37%);
+font-family: 'Fraunces', serif;
+}
+
+.price p{
+    text-decoration: line-through;
+}
+
+
+button{ background-color: hsl(158, 36%, 37%);
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    border: none;
+    height: 2.8rem;
+    width: 84%;
+    margin-left: 8%;
+    margin-bottom:4%;
+}
+
+
+@media(min-width:1440px) {
+   
+    /* image */
+
+    main{
+        width: 60%; 
+       
+    }
+    .work{
+        width: 60%;
+        
+    }
+
+    #mobile-image{
+        display: none;
+    }
+    
+    #desktop-image{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+.work{ 
+    display: flex;
+    flex-direction: row;
+}
+.container{
+    margin-top: 20px;
+   
+   width: 70%;
+}
+p{
+    font-size: 23px;
+}
+.write{
+    width: 80%;
+}
+.write h2{
+    font-size: 50px;
+}
+.write p{
+    
+    line-height: 2.5rem;
+    width: 99%;
+   }
+   .price{
+    width: 60%;
+    padding-left: 9px;
+   }
+   .price h2{
+    font-size: 40px;
+    }
+    
+    .price p{
+        text-decoration: line-through;
+    }
+    button{ 
+        height: 3rem;
+        width: 84%;
+        margin-left: 9.5%;
+        margin-bottom:4%;
+        margin-top: -4px;
+        font-size: 23px;
+    }
+}

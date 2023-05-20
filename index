@@ -1,0 +1,163 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assignment.css">
+    <title>Document</title>
+</head>
+<body>
+<section class="ss">
+    <header class="perfume boddy">
+        <img src="./assets/image-product-mobile.jpg" alt="">
+    </header>
+    <main class="container boddy">
+        <section class="write">
+            <div>
+                    <p>PERFUME</p>
+                <h2>Gabrielle Essence Eau De Per<d id="italic">f</d>um</h2>
+                <p>A floral, solar and voluptuous interpretation composed by olivier Polge, Perfumer-Creator for the House of CHANEL</p>
+            </div>
+    
+
+         <div class="price" >
+                <h2>$149.99</h2>
+                <p>$169.99</p>
+        </div>
+        
+       
+        <footer class="container icon">
+            <button>
+                <img src="./assets/icon-cart.svg" alt="" class="cart">
+                Add to Cart
+            </button>
+        </footer>
+        </section>
+</section>
+        
+</main>
+</body>
+</html>
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    
+}
+p{
+    font-size: 13px;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    background-color: hsl(0, 0%, 100%);
+}
+
+/* image */
+header{
+    padding-top: 20px;
+}
+header img{
+    width: 90%;
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+    margin: auto;
+}
+
+/* below image */
+.boddy{ 
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    width: 90%;
+margin: auto;
+padding: auto;   
+}
+
+/* body wrting before cost */
+.write{
+    width: 85%;
+    margin: auto;
+    padding: auto;
+}
+ 
+.write h2{
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+}
+.write p{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5rem;
+    width: 99%;
+}
+
+/* cost */
+.price{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 75%;
+    align-items: center;
+}
+
+.price h2{
+color: hsl(158, 36%, 37%);
+font-family: 'Fraunces', serif;
+}
+
+.price p{
+    text-decoration: line-through;
+}
+
+
+button{ background-color: hsl(158, 36%, 37%);
+         width: 100%;
+        justify-content: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    border: none;
+    margin: auto;
+    height: 3rem;
+}
+
+
+.cart{
+    color: white;
+    text-align: center;
+   
+}
+
+@media(min-width:1024px) {
+   
+    /* image */
+
+header img{
+    width: 30%;
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+}
+
+/* below image */
+.boddy{
+    flex-direction: row;
+}
+
+main{
+    width: 3%;   
+}
+.ss{
+    display: flex;
+}
+}
